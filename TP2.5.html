@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2></h2>
+
+<p id="test"></p>
+
+<script>
+let text = '{"firsttest":[' +
+'{"firstobj":"okok1","lasttest":"okok2" },' +
+'{"firstobj":"akak1","lasttest":"akak2" },' +
+'{"firstobj":"ukuk1","lasttest":"ukuk2" }]}';
+
+const obj = JSON.parse(text);
+document.getElementById("test").innerHTML =
+obj.firsttest[1].firstobj + " " + obj.firsttest[2].lasttest;
+</script>
+
+</body>
+</html>

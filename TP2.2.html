@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2>JavaScript Array iteration</h2>
+	<p>increment an array of 5 elements, and return the result times 2</p>
+
+	<p id="demo"></p>
+
+	<script>
+		var numbers = [];
+		for (let i = 0; i<5;i++){
+			var nombre = prompt("enter a number?", "<there>");
+			numbers.push(nombre);
+		}
+		let txt = "";
+		numbers.forEach(myFunction);
+		document.getElementById("demo").innerHTML = txt;
+
+		function myFunction(value, index, array) {
+		  txt += value*2 + "<br>";
+		}
+	</script>
+
+</body>
+</html>
